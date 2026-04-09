@@ -3,10 +3,6 @@ import { LoginPage } from '../pageObjects/loginPage';
 import { AppointmentPage } from '../pageObjects/appointmentPage';
 import { HistoryPage } from '../pageObjects/historyPage';
 
-Cypress.on("uncaught:exception", (err, runnable) => {
-  return false;
-});
-
 describe('test-site scenarios', () => {
     context('auto login', () => {
       beforeEach(() => {
